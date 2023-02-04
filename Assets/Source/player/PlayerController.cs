@@ -4,15 +4,42 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private Player _player;
+
+    private static string PLAYER_PREFAB_PATH = "prefabs/Player";
+    
     void Start()
     {
-        
+        this._player = PlayerController.GeneratePlayer();
     }
 
-    // Update is called once per frame
-    void Update()
+    void Update() {
+        if(Input.GetKey(KeyCode.W)) {
+            this._player.Attack(AttackDirection.UP);
+        }
+        if(Input.GetKey(KeyCode.A)) {
+            this._player.Attack(AttackDirection.LEFT);
+        }
+        if(Input.GetKey(KeyCode.S)) {
+            this._player.Attack(AttackDirection.DOWN);
+        }
+        if(Input.GetKey(KeyCode.D)) {
+            this._player.Attack(AttackDirection.RIGHT);
+        }
+    }
+
+    private static Player GeneratePlayer()
     {
-        
+        Player playerPrefab = Resources.Load<Player>(PlayerController.PLAYER_PREFAB_PATH);
+
+        if (playerPrefab == null)
+        {
+            Debug.LogError("Player prefab not found at path: " + PlayerController.PLAYER_PREFAB_PATH);
+            return null;
+        }
+
+        Player newPlayer = Instantiate(playerPrefab);
+
+        return newPlayer;
     }
 }
