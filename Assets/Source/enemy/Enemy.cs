@@ -15,9 +15,11 @@ public class Enemy: MonoBehaviour
     {
     }
 
-
     void Update()
     {
-        this._behaviour?.Attack();
+        if (this._behaviour == null)
+            return;
+
+        this._behaviour.Attack();
     }
 }

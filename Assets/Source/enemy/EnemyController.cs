@@ -12,6 +12,7 @@ public class EnemyController: MonoBehaviour
 
     void Start()
     {
+        this._enemies = new List<Enemy>();
         this.PopulateEnemies();
     }
 
