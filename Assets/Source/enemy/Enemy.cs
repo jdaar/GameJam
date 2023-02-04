@@ -20,6 +20,21 @@ public class Enemy: MonoBehaviour
         this._behaviour = new T();
     }
 
+    public void OnPlayerHit() {
+        if (Vector3.Distance(_transform.position, _target.position) < 2 ) {
+            Animator _animator = gameObject.GetComponent<Animator>();
+
+            _animator.Play("Wasabi_Death");
+            if(_animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1) {
+                Debug.Log("not playing");
+                _transform.position = EnemyController.GetRandomSpawnPosition();
+                OnPositionChange();
+            }
+            else 
+                Debug.Log("playing");
+        }
+    }
+
     void Start()
     {
         this._transform = gameObject.GetComponent<Transform>();
@@ -27,7 +42,7 @@ public class Enemy: MonoBehaviour
         this._movementStartTime = Time.time;
         this._journeyLength = Vector3.Distance(this._transform.position, this._target.position);
 
-        MainEvent.OnPlayerMove += this.OnPositionChange;
+        MainEvent.OnPlayerHit += this.OnPlayerHit;
     }
 
     void OnPositionChange()

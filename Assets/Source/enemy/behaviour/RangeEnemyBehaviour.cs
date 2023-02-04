@@ -6,7 +6,7 @@ public class RangeEnemyBehaviour : BaseEnemyBehaviour
         return Vector3.Lerp(initialPosition, targetPosition, distanceCovered);
     }
     public override void Attack() {
-        MainEvent.OnPlayerHit?.Invoke();
+        MainEvent.OnPlayerTakeDamage?.Invoke();
     }
 
     public override void OnHit() {

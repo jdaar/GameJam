@@ -5,6 +5,9 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Player _player;
+    private static float _playerPositionX = 0;
+    private static float _playerPositionY = -3.5f;
+
     private static string PLAYER_PREFAB_PATH = "prefabs/Player";
     
     void Start()
@@ -13,16 +16,10 @@ public class PlayerController : MonoBehaviour
     }
 
     void Update() {
-        if(Input.GetKey(KeyCode.W)) {
-            this._player.Attack(AttackDirection.UP);
-        }
-        if(Input.GetKey(KeyCode.A)) {
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) {
             this._player.Attack(AttackDirection.LEFT);
         }
-        if(Input.GetKey(KeyCode.S)) {
-            this._player.Attack(AttackDirection.DOWN);
-        }
-        if(Input.GetKey(KeyCode.D)) {
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) {
             this._player.Attack(AttackDirection.RIGHT);
         }
     }
@@ -37,9 +34,8 @@ public class PlayerController : MonoBehaviour
             return null;
         }
 
-        Player newPlayer = Instantiate<Player>(playerPrefab);
-        
-        newPlayer.transform.position =  new Vector3(0, 0, 0);
+        Vector3 _playerPosition = new Vector3(_playerPositionX, _playerPositionY, 0);
+        Player newPlayer = Instantiate<Player>(playerPrefab, _playerPosition, Quaternion.identity);
 
         return newPlayer;
     }

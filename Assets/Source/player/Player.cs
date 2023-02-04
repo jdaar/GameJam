@@ -17,8 +17,10 @@ public class Player : MonoBehaviour
 
     public void Attack(AttackDirection direction)
     {
+        Animator _animator = gameObject.GetComponent<Animator>();
+        _animator.Play("Ruth_Punch");
         Debug.Log("Player attacked in direction: " + direction);
-        MainEvent.OnPlayerMove?.Invoke();
+        MainEvent.OnPlayerHit?.Invoke();
     }
 
     private void OnHit()
@@ -36,6 +38,5 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 }
