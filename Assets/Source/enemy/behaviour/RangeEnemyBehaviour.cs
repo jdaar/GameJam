@@ -1,10 +1,12 @@
 using UnityEngine;
 
-public class MeleeBehaviour : BaseBehaviour
+public class RangeEnemyBehaviour : BaseEnemyBehaviour
 {
+    public override Vector3 Move(Vector3 actualPosition, Vector3 targetPosition) {
+        Debug.LogWarning("RangeBehaviour Move");
+        return targetPosition;
+    }
     public override void Attack() {
-        if (Input.GetKeyDown(KeyCode.Space))
-            Debug.Log("MeleeBehaviour Attack (space pressed)");
     }
 
     public override void OnHit() {

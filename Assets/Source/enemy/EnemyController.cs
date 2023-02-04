@@ -42,10 +42,10 @@ public class EnemyController: MonoBehaviour
         switch (randomBehaviour)
         {
             case 0:
-                newEnemy.SetBehaviour<MeleeBehaviour>();
+                newEnemy.SetBehaviour<MeleeEnemyBehaviour>();
                 break;
             case 1:
-                newEnemy.SetBehaviour<MeleeBehaviour>();
+                newEnemy.SetBehaviour<RangeEnemyBehaviour>();
                 break;
             default:
                 Debug.LogError("Invalid behaviour index: " + randomBehaviour);

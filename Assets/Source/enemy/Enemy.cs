@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Enemy: MonoBehaviour
 {
-    [SerializeField] private BaseBehaviour _behaviour;
+    [SerializeField] private BaseEnemyBehaviour _behaviour;
 
-    public void SetBehaviour<T> () where T: BaseBehaviour, new()
+    public void SetBehaviour<T> () where T: BaseEnemyBehaviour, new()
     {
         this._behaviour = new T();
     }
@@ -17,9 +17,11 @@ public class Enemy: MonoBehaviour
 
     void Update()
     {
+        Transform transform = gameObject.GetComponent<Transform>();
+
         if (this._behaviour == null)
             return;
 
-        this._behaviour.Attack();
+        transform.position = this._behaviour.Move(transform.position, new Vector3(1, 1, 1));
     }
 }
