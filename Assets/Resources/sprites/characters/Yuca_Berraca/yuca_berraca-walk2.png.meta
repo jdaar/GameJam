@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 15f12ec26f1437a4c97c535b624f5787
+guid: e9d468a9a84903a4a8688376076e3b94
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 120
+  spritePixelsToUnits: 180
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: nabo_manon-death_0
+      name: yuca_berraca-walk2_0
       rect:
         serializedVersion: 2
-        x: 190
-        y: 1490
-        width: 723
-        height: 552
+        x: 49
+        y: 1312
+        width: 701
+        height: 803
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55232aa793ee43b41a5f85d3aee82d2c
-      internalID: -26177729
+      spriteID: 2f0f442cdd4910245a112f2b67e29da6
+      internalID: -199065024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nabo_manon-death_1
+      name: yuca_berraca-walk2_1
       rect:
         serializedVersion: 2
-        x: 1135
-        y: 1490
-        width: 769
-        height: 517
+        x: 901
+        y: 1339
+        width: 674
+        height: 803
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b22b58e42ffa774482adc144136e490
-      internalID: 1422299326
+      spriteID: c01e0c5599ffdd54fb1158af01e0e3d7
+      internalID: 1702162294
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nabo_manon-death_2
+      name: yuca_berraca-walk2_2
       rect:
         serializedVersion: 2
-        x: 2126
-        y: 1490
-        width: 782
-        height: 483
+        x: 1724
+        y: 1339
+        width: 625
+        height: 776
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2983f838b7562ef4eb960d874ca2697c
-      internalID: 1970093763
+      spriteID: 932210187ca2d3a45af7ff3a9688ea97
+      internalID: -2037236998
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nabo_manon-death_3
+      name: yuca_berraca-walk2_3
       rect:
         serializedVersion: 2
-        x: 3130
-        y: 1502
-        width: 723
-        height: 481
+        x: 2498
+        y: 1339
+        width: 622
+        height: 803
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2bf9329c00f5d7541ac1980fb2def019
-      internalID: 959961196
+      spriteID: b99043fa368db1a45bbefca46a26dd82
+      internalID: -1201179325
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nabo_manon-death_4
+      name: yuca_berraca-walk2_4
       rect:
         serializedVersion: 2
-        x: 4109
-        y: 1514
-        width: 666
-        height: 447
+        x: 3271
+        y: 1339
+        width: 752
+        height: 830
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 150630f51a6c85741a14ccc8ab9184a2
-      internalID: 1425636595
+      spriteID: 90916ac680228f945a2e8ba668c16506
+      internalID: 1066665034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nabo_manon-death_5
+      name: yuca_berraca-walk2_5
       rect:
         serializedVersion: 2
-        x: 238
-        y: 860
-        width: 660
-        height: 486
+        x: 4148
+        y: 1312
+        width: 803
+        height: 857
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,20 +236,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 033e0c728d0c72a49b2de96694307f3d
-      internalID: 1912496564
+      spriteID: 9830ba02d9a29d74f98dde4afdae0bb8
+      internalID: -1782163404
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nabo_manon-death_7
+      name: yuca_berraca-walk2_6
       rect:
         serializedVersion: 2
-        x: 1208
-        y: 865
-        width: 626
-        height: 481
+        x: 49
+        y: 254
+        width: 779
+        height: 806
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,20 +257,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 176cd36c14e51b94c9a8b219e703c919
-      internalID: -67200018
+      spriteID: 55bdd76b45862784fa18ce0a31d21dad
+      internalID: 1408033541
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nabo_manon-death_9
+      name: yuca_berraca-walk2_7
       rect:
         serializedVersion: 2
-        x: 2220
-        y: 875
-        width: 528
-        height: 449
+        x: 901
+        y: 254
+        width: 752
+        height: 831
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,20 +278,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fa7ced3b82b42549985dd0609e673a7
-      internalID: 324380395
+      spriteID: ac492d819a0aec34dae6f973ae63943f
+      internalID: 1816661296
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nabo_manon-death_10
+      name: yuca_berraca-walk2_8
       rect:
         serializedVersion: 2
-        x: 3211
-        y: 893
-        width: 502
-        height: 417
+        x: 1750
+        y: 254
+        width: 623
+        height: 806
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,20 +299,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c50ba84622ca29a4f93bec8d6d42b432
-      internalID: -360246333
+      spriteID: 499109765ecdd1149ad0104fd7ea1b86
+      internalID: 2123881097
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nabo_manon-death_11
+      name: yuca_berraca-walk2_9
       rect:
         serializedVersion: 2
-        x: 4217
-        y: 939
-        width: 312
-        height: 356
+        x: 2549
+        y: 254
+        width: 625
+        height: 779
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,20 +320,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bd1625c0cd345b4c84cd6fbc0550559
-      internalID: -648319436
+      spriteID: d884e8fdce746814b8622367380f48d4
+      internalID: -892999551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nabo_manon-death_23
+      name: yuca_berraca-walk2_10
       rect:
         serializedVersion: 2
-        x: 241
-        y: 152
-        width: 555
-        height: 565
+        x: 3271
+        y: 254
+        width: 674
+        height: 806
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,20 +341,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6fa3570456b7924ab98f3b7d1b39768
-      internalID: -1376848387
+      spriteID: 97296f3d87f0b8c42ad9bdf9d5be1b56
+      internalID: -1436049022
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nabo_manon-death_24
+      name: yuca_berraca-walk2_11
       rect:
         serializedVersion: 2
-        x: 1220
-        y: 172
-        width: 621
-        height: 564
+        x: 4148
+        y: 254
+        width: 701
+        height: 806
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -362,29 +362,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0395b812e992cd548af9a7a51ddc60ad
-      internalID: 1234561911
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nabo_manon-death_6
-      rect:
-        serializedVersion: 2
-        x: 2177
-        y: 137
-        width: 662
-        height: 614
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae22136c2bd773245bd0ea509dddab1f
-      internalID: 1668532709
+      spriteID: 01fa9d4c9342f9046ae34fa55919b538
+      internalID: -319978686
       vertices: []
       indices: 
       edges: []
@@ -400,31 +379,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      nabo_manon-death_2: 1970093763
-      nabo_manon-death_10: -360246333
-      nabo_manon-death_22: -1861643494
-      nabo_manon-death_15: -119774260
-      nabo_manon-death_8: -739375447
-      nabo_manon-death_18: 1946770368
-      nabo_manon-death_20: 1623230240
-      nabo_manon-death_21: -686937447
-      nabo_manon-death_9: 324380395
-      nabo_manon-death_0: -26177729
-      nabo_manon-death_1: 1422299326
-      nabo_manon-death_14: 1959268841
-      nabo_manon-death_24: 1234561911
-      nabo_manon-death_12: -941043202
-      nabo_manon-death_11: -648319436
-      nabo_manon-death_13: 482817366
-      nabo_manon-death_3: 959961196
-      nabo_manon-death_19: -421410162
-      nabo_manon-death_17: 2062785739
-      nabo_manon-death_4: 1425636595
-      nabo_manon-death_23: -1376848387
-      nabo_manon-death_6: 1668532709
-      nabo_manon-death_7: -67200018
-      nabo_manon-death_5: 1912496564
-      nabo_manon-death_16: 1006166328
+      yuca_berraca-walk2_0: -199065024
+      yuca_berraca-walk2_1: 1702162294
+      yuca_berraca-walk2_9: -892999551
+      yuca_berraca-walk2_7: 1816661296
+      yuca_berraca-walk2_4: 1066665034
+      yuca_berraca-walk2_5: -1782163404
+      yuca_berraca-walk2_2: -2037236998
+      yuca_berraca-walk2_11: -319978686
+      yuca_berraca-walk2_3: -1201179325
+      yuca_berraca-walk2_10: -1436049022
+      yuca_berraca-walk2_8: 2123881097
+      yuca_berraca-walk2_6: 1408033541
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

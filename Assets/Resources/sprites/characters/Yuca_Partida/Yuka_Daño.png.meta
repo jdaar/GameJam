@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 15f12ec26f1437a4c97c535b624f5787
+guid: 3d0483c4b49df9442aaa48b520fbfc19
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 120
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: nabo_manon-death_0
+      name: "Yuka_Da\xF1o_0"
       rect:
         serializedVersion: 2
-        x: 190
-        y: 1490
-        width: 723
-        height: 552
+        x: 68
+        y: 26
+        width: 340
+        height: 396
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55232aa793ee43b41a5f85d3aee82d2c
-      internalID: -26177729
+      spriteID: 75d8ef0846a92f748ba6625059ff847b
+      internalID: 415804714
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nabo_manon-death_1
+      name: "Yuka_Da\xF1o_1"
       rect:
         serializedVersion: 2
-        x: 1135
-        y: 1490
-        width: 769
-        height: 517
+        x: 530
+        y: 26
+        width: 326
+        height: 396
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,167 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b22b58e42ffa774482adc144136e490
-      internalID: 1422299326
+      spriteID: dab1fb983d3624e40a0edee4d4fb365a
+      internalID: 50385287
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nabo_manon-death_2
+      name: "Yuka_Da\xF1o_2"
       rect:
         serializedVersion: 2
-        x: 2126
-        y: 1490
-        width: 782
-        height: 483
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2983f838b7562ef4eb960d874ca2697c
-      internalID: 1970093763
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nabo_manon-death_3
-      rect:
-        serializedVersion: 2
-        x: 3130
-        y: 1502
-        width: 723
-        height: 481
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2bf9329c00f5d7541ac1980fb2def019
-      internalID: 959961196
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nabo_manon-death_4
-      rect:
-        serializedVersion: 2
-        x: 4109
-        y: 1514
-        width: 666
-        height: 447
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 150630f51a6c85741a14ccc8ab9184a2
-      internalID: 1425636595
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nabo_manon-death_5
-      rect:
-        serializedVersion: 2
-        x: 238
-        y: 860
-        width: 660
-        height: 486
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 033e0c728d0c72a49b2de96694307f3d
-      internalID: 1912496564
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nabo_manon-death_7
-      rect:
-        serializedVersion: 2
-        x: 1208
-        y: 865
-        width: 626
-        height: 481
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 176cd36c14e51b94c9a8b219e703c919
-      internalID: -67200018
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nabo_manon-death_9
-      rect:
-        serializedVersion: 2
-        x: 2220
-        y: 875
-        width: 528
-        height: 449
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1fa7ced3b82b42549985dd0609e673a7
-      internalID: 324380395
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nabo_manon-death_10
-      rect:
-        serializedVersion: 2
-        x: 3211
-        y: 893
-        width: 502
-        height: 417
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c50ba84622ca29a4f93bec8d6d42b432
-      internalID: -360246333
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nabo_manon-death_11
-      rect:
-        serializedVersion: 2
-        x: 4217
-        y: 939
+        x: 1006
+        y: 26
         width: 312
-        height: 356
+        height: 396
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bd1625c0cd345b4c84cd6fbc0550559
-      internalID: -648319436
+      spriteID: 5a5d4e21428381740b047cbb6ccb509f
+      internalID: 235867195
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nabo_manon-death_23
+      name: "Yuka_Da\xF1o_3"
       rect:
         serializedVersion: 2
-        x: 241
-        y: 152
-        width: 555
-        height: 565
+        x: 1468
+        y: 26
+        width: 312
+        height: 396
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6fa3570456b7924ab98f3b7d1b39768
-      internalID: -1376848387
+      spriteID: 841959b7196f0804999f69faea95e3f3
+      internalID: -811416478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nabo_manon-death_24
+      name: "Yuka_Da\xF1o_4"
       rect:
         serializedVersion: 2
-        x: 1220
-        y: 172
-        width: 621
-        height: 564
+        x: 1916
+        y: 26
+        width: 312
+        height: 396
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -362,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0395b812e992cd548af9a7a51ddc60ad
-      internalID: 1234561911
+      spriteID: ef30fd89207e6bc4f9f2be82fe9660ef
+      internalID: -1741393440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nabo_manon-death_6
+      name: "Yuka_Da\xF1o_5"
       rect:
         serializedVersion: 2
-        x: 2177
-        y: 137
-        width: 662
-        height: 614
+        x: 2364
+        y: 26
+        width: 312
+        height: 396
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -383,8 +236,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae22136c2bd773245bd0ea509dddab1f
-      internalID: 1668532709
+      spriteID: 8ede4e587bfd3e9459fd108a03c42c9c
+      internalID: 540670494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Yuka_Da\xF1o_6"
+      rect:
+        serializedVersion: 2
+        x: 2812
+        y: 26
+        width: 312
+        height: 396
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc72d591c7e4480468605ba10e21ad39
+      internalID: -2013636931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Yuka_Da\xF1o_7"
+      rect:
+        serializedVersion: 2
+        x: 3260
+        y: 26
+        width: 312
+        height: 396
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 332b1bfbc52b03b4dbe30907deecc1fa
+      internalID: -1227751769
       vertices: []
       indices: 
       edges: []
@@ -400,31 +295,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      nabo_manon-death_2: 1970093763
-      nabo_manon-death_10: -360246333
-      nabo_manon-death_22: -1861643494
-      nabo_manon-death_15: -119774260
-      nabo_manon-death_8: -739375447
-      nabo_manon-death_18: 1946770368
-      nabo_manon-death_20: 1623230240
-      nabo_manon-death_21: -686937447
-      nabo_manon-death_9: 324380395
-      nabo_manon-death_0: -26177729
-      nabo_manon-death_1: 1422299326
-      nabo_manon-death_14: 1959268841
-      nabo_manon-death_24: 1234561911
-      nabo_manon-death_12: -941043202
-      nabo_manon-death_11: -648319436
-      nabo_manon-death_13: 482817366
-      nabo_manon-death_3: 959961196
-      nabo_manon-death_19: -421410162
-      nabo_manon-death_17: 2062785739
-      nabo_manon-death_4: 1425636595
-      nabo_manon-death_23: -1376848387
-      nabo_manon-death_6: 1668532709
-      nabo_manon-death_7: -67200018
-      nabo_manon-death_5: 1912496564
-      nabo_manon-death_16: 1006166328
+      "Yuka_Da\xF1o_1": 50385287
+      "Yuka_Da\xF1o_7": -1227751769
+      "Yuka_Da\xF1o_5": 540670494
+      "Yuka_Da\xF1o_6": -2013636931
+      "Yuka_Da\xF1o_0": 415804714
+      "Yuka_Da\xF1o_2": 235867195
+      "Yuka_Da\xF1o_3": -811416478
+      "Yuka_Da\xF1o_4": -1741393440
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

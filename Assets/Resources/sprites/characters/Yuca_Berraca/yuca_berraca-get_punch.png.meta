@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7ddd4532758db6b41957197dbbe47745
+guid: 003ff30634ee82e4fbd6dce428da2032
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 180
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Wasabi_Muerte_0
+      name: yuca_berraca-get_punch_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 280
-        height: 392
+        x: 102
+        y: 195
+        width: 699
+        height: 804
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87808ec505234f344b6a50eb37693479
-      internalID: 1452795423
+      spriteID: fa51cb36af0fc5a438736e3486e74093
+      internalID: 1426656102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wasabi_Muerte_1
+      name: yuca_berraca-get_punch_1
       rect:
         serializedVersion: 2
-        x: 280
-        y: 0
-        width: 280
-        height: 392
+        x: 926
+        y: 195
+        width: 699
+        height: 804
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8b35e1e049c1f54e905702b38facc3b
-      internalID: 1069716838
+      spriteID: 379351c8c31231246ae9cbfdecebf008
+      internalID: -33131269
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wasabi_Muerte_2
+      name: yuca_berraca-get_punch_2
       rect:
         serializedVersion: 2
-        x: 560
-        y: 0
-        width: 280
-        height: 392
+        x: 1750
+        y: 195
+        width: 727
+        height: 804
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f75f26e42b812f24d8fd222092a70f56
-      internalID: -421832855
+      spriteID: ce3a3db654dedfb4780997df4edfa3e9
+      internalID: -126528738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wasabi_Muerte_3
+      name: yuca_berraca-get_punch_3
       rect:
         serializedVersion: 2
-        x: 840
-        y: 0
-        width: 280
-        height: 392
+        x: 2602
+        y: 195
+        width: 750
+        height: 804
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bea1cba8004ab349bd9b04f742ed331
-      internalID: -405505179
+      spriteID: c12a10a2724c8284db764c0aa1799203
+      internalID: -1717726640
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wasabi_Muerte_4
+      name: yuca_berraca-get_punch_4
       rect:
         serializedVersion: 2
-        x: 1120
-        y: 0
-        width: 280
-        height: 392
+        x: 3478
+        y: 195
+        width: 750
+        height: 804
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,113 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f898f7cc488941343991d783912edb5c
-      internalID: -1417476623
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wasabi_Muerte_5
-      rect:
-        serializedVersion: 2
-        x: 1400
-        y: 0
-        width: 280
-        height: 392
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0ed7891530627f4c8967fa09ca8c9c9
-      internalID: -1974521204
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wasabi_Muerte_6
-      rect:
-        serializedVersion: 2
-        x: 1680
-        y: 0
-        width: 280
-        height: 392
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae8861db2469c3242a76f854738b776f
-      internalID: -1776623443
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wasabi_Muerte_7
-      rect:
-        serializedVersion: 2
-        x: 1960
-        y: 0
-        width: 280
-        height: 392
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 529b40911729aa842872a33eec9d6f75
-      internalID: -689491996
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wasabi_Muerte_8
-      rect:
-        serializedVersion: 2
-        x: 2240
-        y: 0
-        width: 280
-        height: 392
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: be5b23313c490d044bde44c45908c599
-      internalID: -144181507
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wasabi_Muerte_9
-      rect:
-        serializedVersion: 2
-        x: 2530
-        y: 14
-        width: 270
-        height: 378
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 96cb45b1c8234a64bb0d5771cbe35fda
-      internalID: -9229798
+      spriteID: 8117fa10f17bd41409fca0cb1045717e
+      internalID: -779775378
       vertices: []
       indices: 
       edges: []
@@ -337,16 +232,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Wasabi_Muerte_5: -1974521204
-      Wasabi_Muerte_7: -689491996
-      Wasabi_Muerte_3: -405505179
-      Wasabi_Muerte_4: -1417476623
-      Wasabi_Muerte_6: -1776623443
-      Wasabi_Muerte_9: -9229798
-      Wasabi_Muerte_0: 1452795423
-      Wasabi_Muerte_8: -144181507
-      Wasabi_Muerte_2: -421832855
-      Wasabi_Muerte_1: 1069716838
+      yuca_berraca-get_punch_0: 1426656102
+      yuca_berraca-get_punch_2: -126528738
+      yuca_berraca-get_punch_1: -33131269
+      yuca_berraca-get_punch_3: -1717726640
+      yuca_berraca-get_punch_4: -779775378
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

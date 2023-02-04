@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 15f12ec26f1437a4c97c535b624f5787
+guid: a037fb0c9b5840d47993eca164066416
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 120
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: nabo_manon-death_0
+      name: Yuka_Golpe_0
       rect:
         serializedVersion: 2
-        x: 190
-        y: 1490
-        width: 723
-        height: 552
+        x: 0
+        y: 0
+        width: 448
+        height: 448
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55232aa793ee43b41a5f85d3aee82d2c
-      internalID: -26177729
+      spriteID: 5691e99028c789e4c962499544d2d9a5
+      internalID: -112433701
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nabo_manon-death_1
+      name: Yuka_Golpe_1
       rect:
         serializedVersion: 2
-        x: 1135
-        y: 1490
-        width: 769
-        height: 517
+        x: 448
+        y: 0
+        width: 448
+        height: 448
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b22b58e42ffa774482adc144136e490
-      internalID: 1422299326
+      spriteID: 405c01a201612b74eabcfd035b8fd957
+      internalID: 1355311239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nabo_manon-death_2
+      name: Yuka_Golpe_2
       rect:
         serializedVersion: 2
-        x: 2126
-        y: 1490
-        width: 782
-        height: 483
+        x: 896
+        y: 0
+        width: 448
+        height: 448
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2983f838b7562ef4eb960d874ca2697c
-      internalID: 1970093763
+      spriteID: 5e2ba28957fade1408fe54056560b639
+      internalID: 1260634274
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nabo_manon-death_3
+      name: Yuka_Golpe_3
       rect:
         serializedVersion: 2
-        x: 3130
-        y: 1502
-        width: 723
-        height: 481
+        x: 1344
+        y: 0
+        width: 448
+        height: 448
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2bf9329c00f5d7541ac1980fb2def019
-      internalID: 959961196
+      spriteID: 3911185346fe52746874063007010937
+      internalID: -1852363699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nabo_manon-death_4
+      name: Yuka_Golpe_4
       rect:
         serializedVersion: 2
-        x: 4109
-        y: 1514
-        width: 666
-        height: 447
+        x: 1792
+        y: 0
+        width: 448
+        height: 448
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 150630f51a6c85741a14ccc8ab9184a2
-      internalID: 1425636595
+      spriteID: c86afc3f9931eab469a05a094618a48d
+      internalID: 849019919
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nabo_manon-death_5
+      name: Yuka_Golpe_5
       rect:
         serializedVersion: 2
-        x: 238
-        y: 860
-        width: 660
-        height: 486
+        x: 2240
+        y: 0
+        width: 448
+        height: 448
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,20 +236,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 033e0c728d0c72a49b2de96694307f3d
-      internalID: 1912496564
+      spriteID: 11c6e5376908a364a8a665d4221ff711
+      internalID: -1833303005
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nabo_manon-death_7
+      name: Yuka_Golpe_6
       rect:
         serializedVersion: 2
-        x: 1208
-        y: 865
-        width: 626
-        height: 481
+        x: 2688
+        y: 0
+        width: 448
+        height: 448
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,20 +257,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 176cd36c14e51b94c9a8b219e703c919
-      internalID: -67200018
+      spriteID: 3dbe70c8334f62e4ba3bff9162b9ce14
+      internalID: 319010485
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nabo_manon-death_9
+      name: Yuka_Golpe_7
       rect:
         serializedVersion: 2
-        x: 2220
-        y: 875
-        width: 528
-        height: 449
+        x: 3136
+        y: 0
+        width: 448
+        height: 448
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,20 +278,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fa7ced3b82b42549985dd0609e673a7
-      internalID: 324380395
+      spriteID: 97d4d26b6bcabcd4c82463f2343fa9c3
+      internalID: -1997778052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nabo_manon-death_10
+      name: Yuka_Golpe_8
       rect:
         serializedVersion: 2
-        x: 3211
-        y: 893
-        width: 502
-        height: 417
+        x: 3584
+        y: 0
+        width: 448
+        height: 448
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,92 +299,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c50ba84622ca29a4f93bec8d6d42b432
-      internalID: -360246333
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nabo_manon-death_11
-      rect:
-        serializedVersion: 2
-        x: 4217
-        y: 939
-        width: 312
-        height: 356
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4bd1625c0cd345b4c84cd6fbc0550559
-      internalID: -648319436
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nabo_manon-death_23
-      rect:
-        serializedVersion: 2
-        x: 241
-        y: 152
-        width: 555
-        height: 565
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e6fa3570456b7924ab98f3b7d1b39768
-      internalID: -1376848387
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nabo_manon-death_24
-      rect:
-        serializedVersion: 2
-        x: 1220
-        y: 172
-        width: 621
-        height: 564
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0395b812e992cd548af9a7a51ddc60ad
-      internalID: 1234561911
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nabo_manon-death_6
-      rect:
-        serializedVersion: 2
-        x: 2177
-        y: 137
-        width: 662
-        height: 614
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae22136c2bd773245bd0ea509dddab1f
-      internalID: 1668532709
+      spriteID: 5770494f32f85d04aac653b8992cbc08
+      internalID: 257846809
       vertices: []
       indices: 
       edges: []
@@ -400,31 +316,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      nabo_manon-death_2: 1970093763
-      nabo_manon-death_10: -360246333
-      nabo_manon-death_22: -1861643494
-      nabo_manon-death_15: -119774260
-      nabo_manon-death_8: -739375447
-      nabo_manon-death_18: 1946770368
-      nabo_manon-death_20: 1623230240
-      nabo_manon-death_21: -686937447
-      nabo_manon-death_9: 324380395
-      nabo_manon-death_0: -26177729
-      nabo_manon-death_1: 1422299326
-      nabo_manon-death_14: 1959268841
-      nabo_manon-death_24: 1234561911
-      nabo_manon-death_12: -941043202
-      nabo_manon-death_11: -648319436
-      nabo_manon-death_13: 482817366
-      nabo_manon-death_3: 959961196
-      nabo_manon-death_19: -421410162
-      nabo_manon-death_17: 2062785739
-      nabo_manon-death_4: 1425636595
-      nabo_manon-death_23: -1376848387
-      nabo_manon-death_6: 1668532709
-      nabo_manon-death_7: -67200018
-      nabo_manon-death_5: 1912496564
-      nabo_manon-death_16: 1006166328
+      Yuka_Golpe_3: -1852363699
+      Yuka_Golpe_6: 319010485
+      Yuka_Golpe_4: 849019919
+      Yuka_Golpe_5: -1833303005
+      Yuka_Golpe_2: 1260634274
+      Yuka_Golpe_1: 1355311239
+      Yuka_Golpe_7: -1997778052
+      Yuka_Golpe_0: -112433701
+      Yuka_Golpe_8: 257846809
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
