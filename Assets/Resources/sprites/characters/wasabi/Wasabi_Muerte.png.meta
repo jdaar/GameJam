@@ -305,6 +305,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Wasabi_Muerte_9
+      rect:
+        serializedVersion: 2
+        x: 2530
+        y: 14
+        width: 270
+        height: 378
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96cb45b1c8234a64bb0d5771cbe35fda
+      internalID: -9229798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -321,6 +342,7 @@ TextureImporter:
       Wasabi_Muerte_3: -405505179
       Wasabi_Muerte_4: -1417476623
       Wasabi_Muerte_6: -1776623443
+      Wasabi_Muerte_9: -9229798
       Wasabi_Muerte_0: 1452795423
       Wasabi_Muerte_8: -144181507
       Wasabi_Muerte_2: -421832855

@@ -305,6 +305,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Yuka_Muerte_9
+      rect:
+        serializedVersion: 2
+        x: 4054
+        y: 18
+        width: 426
+        height: 430
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc48e79ef9db4b1448d5c276f3ba4db7
+      internalID: -1538364659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -322,6 +343,7 @@ TextureImporter:
       Yuka_Muerte_4: -1752452867
       Yuka_Muerte_8: -1149160620
       Yuka_Muerte_3: 1967525775
+      Yuka_Muerte_9: -1538364659
       Yuka_Muerte_2: 1400553527
       Yuka_Muerte_6: 1583589070
       Yuka_Muerte_0: -1903490719
