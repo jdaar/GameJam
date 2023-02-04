@@ -38,7 +38,9 @@ public class PlayerController : MonoBehaviour
             return null;
         }
 
-        Player newPlayer = Instantiate(playerPrefab);
+        Player newPlayer = Instantiate<Player>(playerPrefab);
+        
+        newPlayer.transform.position = new Vector3(5, 5, 0);
 
         return newPlayer;
     }

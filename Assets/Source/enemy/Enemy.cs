@@ -23,9 +23,19 @@ public class Enemy: MonoBehaviour
     void Start()
     {
         this._transform = gameObject.GetComponent<Transform>();
-        this._target = GameObject.Find("Player").GetComponent<Transform>();
+        this._target = GameObject.FindObjectsOfType<Player>()[0].GetComponent<Transform>();
         this._movementStartTime = Time.time;
         this._journeyLength = Vector3.Distance(this._transform.position, this._target.position);
+
+        MainEvent.OnPlayerMove += this.OnPlayerMove;
+    }
+
+    void OnPlayerMove()
+    {
+        this._movementStartTime = Time.time;
+        this._journeyLength = Vector3.Distance(this._transform.position, this._target.position);
+        this._target = GameObject.FindObjectsOfType<Player>()[0].GetComponent<Transform>();
+        this._attacked = false;
     }
 
     void Update()

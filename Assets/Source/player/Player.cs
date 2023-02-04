@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
     public void Attack(AttackDirection direction)
     {
         Debug.Log("Player attacked in direction: " + direction);
+        MainEvent.OnPlayerMove?.Invoke();
     }
 
     private void OnHit()
