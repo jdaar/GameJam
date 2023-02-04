@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MeleeEnemyBehaviour : BaseEnemyBehaviour
 {
-    public override Vector3 Move(Vector3 actualPosition, Vector3 targetPosition) {
+    public override Vector3 Move(Vector3 actualPosition, Vector3 targetPosition, float distanceCovered) {
         return new Vector3(0, 0, 0);
     }
     public override void Attack() {

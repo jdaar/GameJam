@@ -2,10 +2,12 @@ using UnityEngine;
 
 public class RangeEnemyBehaviour : BaseEnemyBehaviour
 {
-    public override Vector3 Move(Vector3 actualPosition, Vector3 targetPosition) {
-        return targetPosition;
+    public override Vector3 Move(Vector3 initialPosition, Vector3 targetPosition, float distanceCovered) {
+        return Vector3.Lerp(initialPosition, targetPosition, distanceCovered);
     }
     public override void Attack() {
+        Debug.Log("RangeBehaviour Attack");
+        MainEvent.OnPlayerHit.Invoke();
     }
 
     public override void OnHit() {
