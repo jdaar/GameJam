@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Player _player;
-
     private static string PLAYER_PREFAB_PATH = "prefabs/Player";
     
     void Start()
@@ -40,7 +39,7 @@ public class PlayerController : MonoBehaviour
 
         Player newPlayer = Instantiate<Player>(playerPrefab);
         
-        newPlayer.transform.position = new Vector3(5, 5, 0);
+        newPlayer.transform.position =  new Vector3(0, 0, 0);
 
         return newPlayer;
     }

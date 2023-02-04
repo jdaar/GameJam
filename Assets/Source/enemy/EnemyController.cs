@@ -35,7 +35,17 @@ public class EnemyController: MonoBehaviour
         }
 
         Random random = new Random();
-        Enemy newEnemy = Instantiate(enemyPrefab);
+
+        int randomScalar = random.Next(1, 3);
+        bool direction = random.Next(0, 2) == 1;
+
+        Vector3 randomPosition = new Vector3(
+            direction ? -10 * randomScalar : 10 * randomScalar,
+            0,
+            0);
+        Debug.Log(randomPosition);
+
+        Enemy newEnemy = Instantiate(enemyPrefab, randomPosition, Quaternion.identity);
 
         int randomBehaviour = random.Next(0, 2);
 

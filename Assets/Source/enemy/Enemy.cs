@@ -27,10 +27,10 @@ public class Enemy: MonoBehaviour
         this._movementStartTime = Time.time;
         this._journeyLength = Vector3.Distance(this._transform.position, this._target.position);
 
-        MainEvent.OnPlayerMove += this.OnPlayerMove;
+        MainEvent.OnPlayerMove += this.OnPositionChange;
     }
 
-    void OnPlayerMove()
+    void OnPositionChange()
     {
         this._movementStartTime = Time.time;
         this._journeyLength = Vector3.Distance(this._transform.position, this._target.position);
