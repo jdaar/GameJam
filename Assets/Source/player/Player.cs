@@ -14,12 +14,20 @@ public enum AttackDirection
 public class Player : MonoBehaviour
 {
     [SerializeField] private int _health = 100;
+    private Transform _transform;
 
     public void Attack(AttackDirection direction)
     {
         Animator _animator = gameObject.GetComponent<Animator>();
+        if (direction == AttackDirection.RIGHT) {
+            _transform.localScale = new Vector3(1, 1, 1);
+        }
+        if (direction == AttackDirection.LEFT) {
+            _transform.localScale = new Vector3(-1, 1, 1);
+        }
         _animator.Play("Ruth_Punch");
-        Debug.Log("Player attacked in direction: " + direction);
+
+
         MainEvent.OnPlayerHit?.Invoke();
     }
 
@@ -32,6 +40,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _transform = gameObject.GetComponent<Transform>();
         MainEvent.OnPlayerHit += this.OnHit;
     }
 

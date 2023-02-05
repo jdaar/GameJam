@@ -16,10 +16,10 @@ public class PlayerController : MonoBehaviour
     }
 
     void Update() {
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) {
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)) {
             this._player.Attack(AttackDirection.LEFT);
         }
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) {
+        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) {
             this._player.Attack(AttackDirection.RIGHT);
         }
     }

@@ -10,10 +10,12 @@ public class Enemy: MonoBehaviour
     private float _journeyLength;
     private float _movementStartTime;
 
-    private bool _attacked = false;
+    private bool _canMove = true;
 
     private Transform _transform;
     private Transform _target;
+
+    private Animator _animator;
 
     public void SetBehaviour<T> () where T: BaseEnemyBehaviour, new()
     {
@@ -21,23 +23,25 @@ public class Enemy: MonoBehaviour
     }
 
     public void OnPlayerHit() {
-        if (Vector3.Distance(_transform.position, _target.position) < 2 ) {
-            Animator _animator = gameObject.GetComponent<Animator>();
-
-            _animator.Play("Wasabi_Death");
-            if(_animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1) {
-                Debug.Log("not playing");
-                _transform.position = EnemyController.GetRandomSpawnPosition();
-                OnPositionChange();
-            }
-            else 
-                Debug.Log("playing");
+        if (Vector3.Distance(_transform.position, _target.position) < 2.5 && _canMove) {
+            StartCoroutine(AnimateAndMove("Wasabi_Get_Punch"));
         }
+    }
+
+    private IEnumerator AnimateAndMove(string animationName)
+    {
+        _animator.Play(animationName);
+        _canMove = false;
+        yield return new WaitForSeconds(1);
+        _transform.position = EnemyController.GetRandomSpawnPosition();
+        OnPositionChange();
+        _canMove = true;
     }
 
     void Start()
     {
         this._transform = gameObject.GetComponent<Transform>();
+        this._animator = gameObject.GetComponent<Animator>();
         this._target = GameObject.FindObjectsOfType<Player>()[0].GetComponent<Transform>();
         this._movementStartTime = Time.time;
         this._journeyLength = Vector3.Distance(this._transform.position, this._target.position);
@@ -50,7 +54,6 @@ public class Enemy: MonoBehaviour
         this._movementStartTime = Time.time;
         this._journeyLength = Vector3.Distance(this._transform.position, this._target.position);
         this._target = GameObject.FindObjectsOfType<Player>()[0].GetComponent<Transform>();
-        this._attacked = false;
     }
 
     void Update()
@@ -58,12 +61,16 @@ public class Enemy: MonoBehaviour
         if (this._behaviour == null || this._target == null)
             return;
 
-        if (Vector3.Distance(_transform.position, _target.position) < 1.25 && !_attacked) {
+        if (Vector3.Distance(_transform.position, _target.position) < 1.25) {
             this._behaviour.Attack();
-            this._attacked = true;
+            StartCoroutine(AnimateAndMove("Wasabi_Punch"));
+            _transform.position = EnemyController.GetRandomSpawnPosition();
+            OnPositionChange();
         }
 
-        float distanceCovered = ((Time.time - _movementStartTime) * _speed) / _journeyLength;
-        transform.position = this._behaviour.Move(this._transform.position, this._target.position, distanceCovered);
+        if (_canMove) {
+            float distanceCovered = ((Time.time - _movementStartTime) * _speed) / _journeyLength;
+            transform.position = this._behaviour.Move(this._transform.position, this._target.position, distanceCovered);
+        }
     }
 }
