@@ -31,8 +31,6 @@ public class Player : MonoBehaviour
         }
         _animator.Play("Ruth_Punch");
 
-        AudioClip punchAudioClip = Resources.Load<AudioClip>(Player.PUNCH_SOUND_PATH);
-
         AudioService.Instance.Play(Player.PUNCH_SOUND_PATH);
 
         MainEvent.OnPlayerHit?.Invoke();

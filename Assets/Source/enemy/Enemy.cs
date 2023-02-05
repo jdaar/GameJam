@@ -17,7 +17,7 @@ public class Enemy: MonoBehaviour
 
     private Animator _animator;
 
-    private static string PUNCH_SOUND_PATH = "0_Enemy_Death";
+    private static string DEATH_SOUND_PATH = "0_Enemy_Death";
 
     public void SetBehaviour<T> () where T: BaseEnemyBehaviour, new()
     {
@@ -29,14 +29,12 @@ public class Enemy: MonoBehaviour
             StartCoroutine(AnimateAndMove("Wasabi_Get_Punch"));
         }
         
-        AudioClip punchAudioClip = Resources.Load<AudioClip>(Enemy.PUNCH_SOUND_PATH);
-
-        AudioService.Instance.Play(Enemy.PUNCH_SOUND_PATH);
     }
 
     private IEnumerator AnimateAndMove(string animationName)
     {
         _animator.Play(animationName);
+        AudioService.Instance.Play(Enemy.DEATH_SOUND_PATH);
         _canMove = false;
         yield return new WaitForSeconds(1);
         _transform.position = EnemyController.GetRandomSpawnPosition();
@@ -47,6 +45,7 @@ public class Enemy: MonoBehaviour
         } else {
             _transform.rotation = Quaternion.identity;
         }
+
         OnPositionChange();
         _canMove = true;
     }
