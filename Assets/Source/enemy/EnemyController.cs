@@ -53,7 +53,14 @@ public class EnemyController: MonoBehaviour
         Random random = new Random();
 
         Vector3 randomPosition = EnemyController.GetRandomSpawnPosition();
-        Enemy newEnemy = Instantiate(enemyPrefab, randomPosition, Quaternion.identity);
+        Quaternion flippedQuaternion = Quaternion.Euler(0, 180, 0);
+        Enemy newEnemy;
+        if (randomPosition.x < 0)
+        {
+            newEnemy = Instantiate(enemyPrefab, randomPosition, flippedQuaternion);
+        } else {
+            newEnemy = Instantiate(enemyPrefab, randomPosition, Quaternion.identity);
+        }
 
         int randomBehaviour = random.Next(0, 2);
 

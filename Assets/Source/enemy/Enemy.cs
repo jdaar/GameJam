@@ -34,6 +34,13 @@ public class Enemy: MonoBehaviour
         _canMove = false;
         yield return new WaitForSeconds(1);
         _transform.position = EnemyController.GetRandomSpawnPosition();
+        Quaternion flippedQuaternion = Quaternion.Euler(0, 180, 0);
+        if (_transform.position.x < 0)
+        {
+            _transform.rotation = flippedQuaternion;
+        } else {
+            _transform.rotation = Quaternion.identity;
+        }
         OnPositionChange();
         _canMove = true;
     }
