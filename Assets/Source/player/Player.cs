@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
+
 public enum AttackDirection
 {
     LEFT,
@@ -16,6 +17,8 @@ public class Player : MonoBehaviour
     [SerializeField] private int _health = 3;
     private Transform _transform;
 
+    private static string PUNCH_SOUND_PATH = "5_Player_Punch";
+
     public void Attack(AttackDirection direction)
     {
         Animator _animator = gameObject.GetComponent<Animator>();
@@ -28,6 +31,9 @@ public class Player : MonoBehaviour
         }
         _animator.Play("Ruth_Punch");
 
+        AudioClip punchAudioClip = Resources.Load<AudioClip>(Player.PUNCH_SOUND_PATH);
+
+        AudioService.Instance.Play(Player.PUNCH_SOUND_PATH);
 
         MainEvent.OnPlayerHit?.Invoke();
     }
