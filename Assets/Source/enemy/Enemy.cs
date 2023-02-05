@@ -17,6 +17,8 @@ public class Enemy: MonoBehaviour
 
     private Animator _animator;
 
+    private static string PUNCH_SOUND_PATH = "0_Enemy_Death";
+
     public void SetBehaviour<T> () where T: BaseEnemyBehaviour, new()
     {
         this._behaviour = new T();
@@ -26,6 +28,10 @@ public class Enemy: MonoBehaviour
         if (Vector3.Distance(_transform.position, _target.position) < 2.5 && _canMove) {
             StartCoroutine(AnimateAndMove("Wasabi_Get_Punch"));
         }
+        
+        AudioClip punchAudioClip = Resources.Load<AudioClip>(Player.PUNCH_SOUND_PATH);
+
+        AudioService.Instance.Play(Player.PUNCH_SOUND_PATH);
     }
 
     private IEnumerator AnimateAndMove(string animationName)
