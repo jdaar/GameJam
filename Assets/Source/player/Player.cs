@@ -14,7 +14,6 @@ public enum AttackDirection
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private int _health = 3;
     private Transform _transform;
     private Animator _animator;
 
@@ -38,12 +37,6 @@ public class Player : MonoBehaviour
 
     private void OnPlayerTakeDamage() {
         _animator.Play("Ruth_Get_Punch");
-        if (this._health <= 0)
-        {
-            MainEvent.OnPlayerDeath?.Invoke();
-            return;
-        }
-        this._health -= 1;
     }
 
     // Start is called before the first frame update

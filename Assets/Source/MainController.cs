@@ -35,6 +35,7 @@ public class MainController : MonoBehaviour
         _life -= 1;
         _lifeText.text = _life + (_life > 1 ? " vidas" : " vida");
         if (_life <= 0) {        
+            Debug.Log("Player death event");
             MainEvent.OnPlayerDeath?.Invoke();
         }
     }

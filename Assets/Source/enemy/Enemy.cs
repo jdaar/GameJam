@@ -71,6 +71,10 @@ public class Enemy: MonoBehaviour
         }
     }
 
+    public void OnPlayerDeath() {
+        _canMove = false;
+    }
+
     private IEnumerator AnimateAndMove(string animationName)
     {
         _animator.Play(animationName);
@@ -108,6 +112,7 @@ public class Enemy: MonoBehaviour
         }
 
         MainEvent.OnPlayerHit += this.OnPlayerHit;
+        MainEvent.OnPlayerDeath += this.OnPlayerDeath;
     }
 
     void OnPositionChange()

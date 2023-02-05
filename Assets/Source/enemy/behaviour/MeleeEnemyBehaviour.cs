@@ -8,13 +8,4 @@ public class MeleeEnemyBehaviour : BaseEnemyBehaviour
     public override void Attack() {
         MainEvent.OnPlayerTakeDamage?.Invoke();
     }
-
-    public override void OnHit() {
-        Debug.Log("MeleeBehaviour RecieveDamage");
-    }
-
-    public override void OnSpawn()
-    {
-        throw new System.NotImplementedException();
-    }
 }
