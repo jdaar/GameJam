@@ -6,10 +6,12 @@ using TMPro;
 
 public class MainController : MonoBehaviour
 {
+    private static int INITIAL_LIFE = 10;
+
     private int _score = 0;
     private int _round = 0;
-    private int _life = 10;
-
+    private int _life = INITIAL_LIFE;
+    
     [SerializeField] private TMP_Text _scoreText;
     [SerializeField] private TMP_Text _roundText;
     [SerializeField] private TMP_Text _lifeText;
@@ -44,7 +46,7 @@ public class MainController : MonoBehaviour
     public void OnPlayerDeath() {
         
         SceneManager.LoadScene("Main Menu");
-        
+        this._life = MainController.INITIAL_LIFE;
     }
 
     private IEnumerator RestartEnemies() {

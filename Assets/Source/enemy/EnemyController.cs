@@ -29,6 +29,8 @@ public class EnemyController: MonoBehaviour
 
     void Restart()
     {
+        if (this._enemies == null)
+            return; 
         foreach (Enemy enemy in this._enemies)
         {
             Destroy(enemy.gameObject);

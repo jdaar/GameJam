@@ -21,6 +21,8 @@ public class Player : MonoBehaviour
 
     public void Attack(AttackDirection direction)
     {
+        if (_animator == null)
+            return;
         if (direction == AttackDirection.RIGHT) {
             _transform.rotation = Quaternion.identity;
         }
@@ -36,6 +38,8 @@ public class Player : MonoBehaviour
     }
 
     private void OnPlayerTakeDamage() {
+        if (_animator == null)
+            return;
         _animator.Play("Ruth_Get_Punch");
     }
 

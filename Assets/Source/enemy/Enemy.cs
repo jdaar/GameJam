@@ -80,7 +80,7 @@ public class Enemy: MonoBehaviour
         AudioService.Instance.Play(Enemy.DEATH_SOUND_PATH);
         _canMove = false;
 
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(2f);
 
         _transform.position = EnemyController.GetRandomSpawnPosition();
         Quaternion flippedQuaternion = Quaternion.Euler(0, 180, 0);
