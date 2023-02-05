@@ -35,13 +35,16 @@ public class MainController : MonoBehaviour
     public void OnPlayerTakeDamage() {
         _life -= 1;
         _lifeText.text = _life + (_life > 1 ? " vidas" : " vida");
-        if (_life <= 0) {        
+        if (_life <= 0) {
+            
             MainEvent.OnPlayerDeath?.Invoke();
         }
     }
 
     public void OnPlayerDeath() {
+        
         SceneManager.LoadScene("Main Menu");
+        
     }
 
     private IEnumerator RestartEnemies() {
