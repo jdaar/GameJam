@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class MainController : MonoBehaviour
@@ -35,13 +36,12 @@ public class MainController : MonoBehaviour
         _life -= 1;
         _lifeText.text = _life + (_life > 1 ? " vidas" : " vida");
         if (_life <= 0) {        
-            Debug.Log("Player death event");
             MainEvent.OnPlayerDeath?.Invoke();
         }
     }
 
     public void OnPlayerDeath() {
-        Debug.Log("Player death");
+        SceneManager.LoadScene("Main Menu");
     }
 
     private IEnumerator RestartEnemies() {

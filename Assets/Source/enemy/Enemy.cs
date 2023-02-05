@@ -56,6 +56,7 @@ public class Enemy: MonoBehaviour
         this._punchThreshold = punchThreshold;
         this._deathThreshold = deathThreshold;   
     }
+
     public void SetSpeed(float speed)
     {
         this._speed = speed;
@@ -80,9 +81,12 @@ public class Enemy: MonoBehaviour
         _animator.Play(animationName);
         AudioService.Instance.Play(Enemy.DEATH_SOUND_PATH);
         _canMove = false;
-        yield return new WaitForSeconds(1);
+
+        yield return new WaitForSeconds(2.5f);
+
         _transform.position = EnemyController.GetRandomSpawnPosition();
         Quaternion flippedQuaternion = Quaternion.Euler(0, 180, 0);
+
         if (_transform.position.x < 0)
         {
             _transform.rotation = flippedQuaternion;
@@ -101,6 +105,7 @@ public class Enemy: MonoBehaviour
         this._transform = gameObject.GetComponent<Transform>();
         this._animator = gameObject.GetComponent<Animator>();
         this._target = GameObject.FindObjectsOfType<Player>()[0].GetComponent<Transform>();
+        
         this._movementStartTime = Time.time;
         this._journeyLength = Vector3.Distance(this._transform.position, this._target.position);
 
