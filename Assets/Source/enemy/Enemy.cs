@@ -67,7 +67,12 @@ public class Enemy: MonoBehaviour
         }
         if (Vector3.Distance(_transform.position, _target.position) < this._deathThreshold && _canMove && direction == _directionRelativeToPlayer) {
             StartCoroutine(AnimateAndMove(this._deathAnimationName));
+            MainEvent.OnEnemyDeath.Invoke();
         }
+    }
+
+    public void OnPlayerDeath() {
+        _canMove = false;
     }
 
     private IEnumerator AnimateAndMove(string animationName)
@@ -107,6 +112,7 @@ public class Enemy: MonoBehaviour
         }
 
         MainEvent.OnPlayerHit += this.OnPlayerHit;
+        MainEvent.OnPlayerDeath += this.OnPlayerDeath;
     }
 
     void OnPositionChange()

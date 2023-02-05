@@ -20,10 +20,10 @@ public class EnemyDefinition
     public string punchAnimationName = "Punch";
     public string deathAnimationName = "Death";
 
-    [Range(0f, 4f)]
+    [Range(0f, 5f)]
     public float deathThreshold = 2.4f;
 
-    [Range(0f, 4f)]
+    [Range(0f, 5f)]
     public float punchThreshold = 1.8f;
 }
 

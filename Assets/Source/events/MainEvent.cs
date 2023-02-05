@@ -8,10 +8,12 @@ public static class MainEvent
     public delegate void PlayerTakeDamage();
     public static PlayerTakeDamage OnPlayerTakeDamage;
 
-    public delegate void EnemyRestart();
-    public static EnemyRestart OnEnemyRestart;
 
     // Enemy events
     public delegate void EnemyHit(Enemy _enemy);
     public static EnemyHit OnEnemyHit;
+    public delegate void EnemyRestart();
+    public static EnemyRestart OnEnemyRestart;
+    public delegate void EnemyDeath();
+    public static EnemyDeath OnEnemyDeath;
 }
