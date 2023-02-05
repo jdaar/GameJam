@@ -29,9 +29,9 @@ public class Enemy: MonoBehaviour
             StartCoroutine(AnimateAndMove("Wasabi_Get_Punch"));
         }
         
-        AudioClip punchAudioClip = Resources.Load<AudioClip>(Player.PUNCH_SOUND_PATH);
+        AudioClip punchAudioClip = Resources.Load<AudioClip>(Enemy.PUNCH_SOUND_PATH);
 
-        AudioService.Instance.Play(Player.PUNCH_SOUND_PATH);
+        AudioService.Instance.Play(Enemy.PUNCH_SOUND_PATH);
     }
 
     private IEnumerator AnimateAndMove(string animationName)
