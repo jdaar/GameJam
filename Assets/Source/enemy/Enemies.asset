@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyDefinitions:
   - sprite: {fileID: -26177729, guid: 15f12ec26f1437a4c97c535b624f5787, type: 3}
-    speed: 0.1
+    speed: 0.04
     behaviour: 1
     animationController: {fileID: 9100000, guid: d2f956dc6ef6bb64e8509a2edaab6f3f, type: 2}
     punchAnimationName: Nabo_Punch
@@ -22,7 +22,7 @@ MonoBehaviour:
     deathThreshold: 4.5
     punchThreshold: 3
   - sprite: {fileID: -1772201743, guid: bdf78b458d65c81499d0537d8513791a, type: 3}
-    speed: 0.1
+    speed: 0.062
     behaviour: 1
     animationController: {fileID: 9100000, guid: 2a114e307ad947245bb5cb2fb81b45aa, type: 2}
     punchAnimationName: Wasabi_Punch
@@ -30,26 +30,26 @@ MonoBehaviour:
     deathThreshold: 3.5
     punchThreshold: 2
   - sprite: {fileID: 774975255, guid: 3b1baf2fe0af95442a8fe5743232e939, type: 3}
-    speed: 0.1
+    speed: 0.056
     behaviour: 1
     animationController: {fileID: 9100000, guid: 5bac6eaf43b287349b13d413709d8f88, type: 2}
     punchAnimationName: Yuca_Berraca_Punch
     deathAnimationName: Yuca_Berraca_Get_Punch
-    deathThreshold: 4
-    punchThreshold: 2.5
+    deathThreshold: 2.5
+    punchThreshold: 1
   - sprite: {fileID: -1200198182, guid: b8e1944ce6fd23843b1208d0b698375e, type: 3}
-    speed: 0.1
+    speed: 0.056
     behaviour: 1
     animationController: {fileID: 9100000, guid: 898e2bf0137dc8c4386c3ba4e2af6608, type: 2}
     punchAnimationName: Yuca_Mad_Punch
     deathAnimationName: Yuca_Mad_Get_Punch
-    deathThreshold: 4
-    punchThreshold: 2.5
+    deathThreshold: 2.5
+    punchThreshold: 1.5
   - sprite: {fileID: 1261985682, guid: 5f0e2b19514d49a458d60daf65078c69, type: 3}
-    speed: 0.1
+    speed: 0.051
     behaviour: 1
     animationController: {fileID: 9100000, guid: ec1fc654e06298e4c95c728128e1f0f0, type: 2}
     punchAnimationName: Yuca_Partida_Punch
     deathAnimationName: Yuca_Partida_Get_Punch
-    deathThreshold: 4
-    punchThreshold: 2.5
+    deathThreshold: 2.5
+    punchThreshold: 1
