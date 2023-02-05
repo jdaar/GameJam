@@ -9,19 +9,32 @@ public class PlayerController : MonoBehaviour
     private static float _playerPositionY = -3.5f;
 
     private static string PLAYER_PREFAB_PATH = "prefabs/Player";
-    
+
+    public float delayTime = 0.5f;
+
+    private bool canMove = true;
+
     void Start()
     {
         this._player = PlayerController.GeneratePlayer();
     }
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)) {
+        if (canMove && (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)) ){
+            canMove = false;
             this._player.Attack(AttackDirection.LEFT);
+            StartCoroutine(DelayMovement());
         }
-        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) {
+        if (canMove && (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))) {
+            canMove = false;
             this._player.Attack(AttackDirection.RIGHT);
+            StartCoroutine(DelayMovement());
         }
+    }
+    IEnumerator DelayMovement()
+    {
+        yield return new WaitForSeconds(delayTime);
+        canMove = true;
     }
 
     private static Player GeneratePlayer()
