@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
-using UnityEditor.Animations;
 
 [System.Serializable]
 public class EnemyDefinition
@@ -15,7 +13,7 @@ public class EnemyDefinition
     [Range(0, 1)]
     public int behaviour = 0;
 
-    public AnimatorController animationController = null;
+    public RuntimeAnimatorController animationController = null;
 
     public string punchAnimationName = "Punch";
     public string deathAnimationName = "Death";

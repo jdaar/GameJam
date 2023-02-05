@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
-using UnityEditor.Animations;
 
 public class Enemy: MonoBehaviour
 {
@@ -39,7 +37,7 @@ public class Enemy: MonoBehaviour
         spriteRenderer.sprite = sprite;
     }
 
-    public void SetAnimatorController(AnimatorController animatorController)
+    public void SetAnimatorController(RuntimeAnimatorController animatorController)
     {
         this._animator = gameObject.GetComponent<Animator>();
         this._animator.runtimeAnimatorController = animatorController;
