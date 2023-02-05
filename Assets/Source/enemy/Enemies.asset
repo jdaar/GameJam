@@ -29,3 +29,27 @@ MonoBehaviour:
     deathAnimationName: Wasabi_Get_Punch
     deathThreshold: 2.5
     punchThreshold: 1.8
+  - sprite: {fileID: 774975255, guid: 3b1baf2fe0af95442a8fe5743232e939, type: 3}
+    speed: 0.1
+    behaviour: 1
+    animationController: {fileID: 9100000, guid: 5bac6eaf43b287349b13d413709d8f88, type: 2}
+    punchAnimationName: Yuca_Berraca_Punch
+    deathAnimationName: Yuca_Berraca_Get_Punch
+    deathThreshold: 2.5
+    punchThreshold: 1.8
+  - sprite: {fileID: -1200198182, guid: b8e1944ce6fd23843b1208d0b698375e, type: 3}
+    speed: 0.1
+    behaviour: 1
+    animationController: {fileID: 9100000, guid: 898e2bf0137dc8c4386c3ba4e2af6608, type: 2}
+    punchAnimationName: Yuca_Mad_Punch
+    deathAnimationName: Yuca_Mad_Get_Punch
+    deathThreshold: 2.5
+    punchThreshold: 1.8
+  - sprite: {fileID: 1261985682, guid: 5f0e2b19514d49a458d60daf65078c69, type: 3}
+    speed: 0.1
+    behaviour: 1
+    animationController: {fileID: 9100000, guid: ec1fc654e06298e4c95c728128e1f0f0, type: 2}
+    punchAnimationName: Yuca_Mad_Punch
+    deathAnimationName: Yuca_Mad_Get_Punch
+    deathThreshold: 2.5
+    punchThreshold: 1.8
