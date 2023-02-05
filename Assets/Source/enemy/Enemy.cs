@@ -6,7 +6,7 @@ public class Enemy: MonoBehaviour
 {
     [SerializeField] private BaseEnemyBehaviour _behaviour;
 
-    [SerializeField] private float _speed = 0.0000001f;
+    [SerializeField] private float _speed = 0.01f;
     private float _journeyLength;
     private float _movementStartTime;
 
@@ -76,7 +76,6 @@ public class Enemy: MonoBehaviour
         if (Vector3.Distance(_transform.position, _target.position) < 1.25) {
             this._behaviour.Attack();
             StartCoroutine(AnimateAndMove("Wasabi_Punch"));
-            _transform.position = EnemyController.GetRandomSpawnPosition();
             OnPositionChange();
         }
 
