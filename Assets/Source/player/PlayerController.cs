@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
 
     private static string PLAYER_PREFAB_PATH = "prefabs/Player";
 
-    public float delayTime = 0.2f;
+    public float delayTime = 0.1f;
 
     private bool canMove = true;
 
