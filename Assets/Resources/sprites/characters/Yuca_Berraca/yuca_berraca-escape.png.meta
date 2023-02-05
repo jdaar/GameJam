@@ -415,9 +415,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1666
-        y: 796.5
-        width: 833.3333
-        height: 795.5
+        y: 900
+        width: 833
+        height: 737
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -435,10 +435,10 @@ TextureImporter:
       name: yuca_berraca-escape_15
       rect:
         serializedVersion: 2
-        x: 2499
-        y: 796.5
-        width: 833.3333
-        height: 795.5
+        x: 2484
+        y: 885
+        width: 833
+        height: 752
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -457,9 +457,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3332
-        y: 796.5
-        width: 833.3333
-        height: 795.5
+        y: 915
+        width: 833
+        height: 752
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -477,10 +477,10 @@ TextureImporter:
       name: yuca_berraca-escape_17
       rect:
         serializedVersion: 2
-        x: 4165
-        y: 796.5
-        width: 833.3333
-        height: 795.5
+        x: 4167
+        y: 915
+        width: 833
+        height: 722
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -499,9 +499,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1.5
-        width: 833.3333
-        height: 795.5
+        y: 105
+        width: 833
+        height: 762
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -520,9 +520,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 833
-        y: 1.5
-        width: 833.3333
-        height: 795.5
+        y: 105
+        width: 833
+        height: 762
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -541,9 +541,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1666
-        y: 1.5
-        width: 833.3333
-        height: 795.5
+        y: 90
+        width: 833
+        height: 796
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -561,10 +561,10 @@ TextureImporter:
       name: yuca_berraca-escape_21
       rect:
         serializedVersion: 2
-        x: 2499
-        y: 1.5
-        width: 833.3333
-        height: 795.5
+        x: 2484
+        y: 120
+        width: 833
+        height: 762
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -582,10 +582,10 @@ TextureImporter:
       name: yuca_berraca-escape_22
       rect:
         serializedVersion: 2
-        x: 3332
-        y: 1.5
-        width: 833.3333
-        height: 795.5
+        x: 3303
+        y: 135
+        width: 833
+        height: 687
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -604,9 +604,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4165
-        y: 1.5
-        width: 833.3333
-        height: 795.5
+        y: 149
+        width: 833
+        height: 762
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
