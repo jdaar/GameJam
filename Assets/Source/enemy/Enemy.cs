@@ -62,6 +62,9 @@ public class Enemy: MonoBehaviour
     }
 
     public void OnPlayerHit(AttackDirection direction) {
+        if (_transform == null || _target == null) {
+            return;
+        }
         if (Vector3.Distance(_transform.position, _target.position) < this._deathThreshold && _canMove && direction == _directionRelativeToPlayer) {
             StartCoroutine(AnimateAndMove(this._deathAnimationName));
         }
@@ -115,10 +118,9 @@ public class Enemy: MonoBehaviour
 
     void Update()
     {
-        if (this._behaviour == null || this._target == null)
+        if (this._behaviour == null || this._target == null || this._transform == null)
             return;
 
-        Debug.Log("Punch Threshold: " + this._punchThreshold);
         if (Vector3.Distance(_transform.position, _target.position) < this._punchThreshold && _canMove) {
             this._behaviour.Attack();
             StartCoroutine(AnimateAndMove(this._punchAnimationName));

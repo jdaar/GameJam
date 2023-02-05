@@ -25,6 +25,19 @@ public class EnemyController: MonoBehaviour
         }
         this._enemies = new List<Enemy>();
         this.PopulateEnemies();
+
+        MainEvent.OnEnemyRestart += this.Restart;
+    }
+
+    void Restart()
+    {
+        foreach (Enemy enemy in this._enemies)
+        {
+            Destroy(enemy.gameObject);
+        }
+
+        this._enemies.Clear();
+        this.PopulateEnemies();
     }
 
     private void PopulateEnemies()
