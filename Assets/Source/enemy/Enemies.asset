@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3008730c01dd41538aba84ef50d2e30c, type: 3}
+  m_Name: Enemies
+  m_EditorClassIdentifier: 
+  enemyDefinitions:
+  - sprite: {fileID: -26177729, guid: 15f12ec26f1437a4c97c535b624f5787, type: 3}
+    speed: 0.1
+    behaviour: 1
+    animationController: {fileID: 9100000, guid: d2f956dc6ef6bb64e8509a2edaab6f3f, type: 2}
+    punchAnimationName: Nabo_Punch
+    deathAnimationName: Nabo_Get_Punch
+    deathThreshold: 4
+    punchThreshold: 3
+  - sprite: {fileID: -1772201743, guid: bdf78b458d65c81499d0537d8513791a, type: 3}
+    speed: 0.1
+    behaviour: 1
+    animationController: {fileID: 9100000, guid: 2a114e307ad947245bb5cb2fb81b45aa, type: 2}
+    punchAnimationName: Wasabi_Punch
+    deathAnimationName: Wasabi_Get_Punch
+    deathThreshold: 2.5
+    punchThreshold: 1.8

@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
+using UnityEditor.Animations;
 
 public class Enemy: MonoBehaviour
 {
@@ -16,20 +18,53 @@ public class Enemy: MonoBehaviour
     private Transform _transform;
     private Transform _target;
 
+    private string _punchAnimationName;
+    private string _deathAnimationName;
+
+    private float _deathThreshold = 2.4f;
+    private float _punchThreshold = 1.8f;
+
     private Animator _animator;
 
     private static string DEATH_SOUND_PATH = "0_Enemy_Death";
 
-    public void SetBehaviour<T> () where T: BaseEnemyBehaviour, new()
+    public void SetBehaviour (BaseEnemyBehaviour behaviour)
     {
-        this._behaviour = new T();
+        this._behaviour = behaviour;
+    }
+
+    public void SetSprite(Sprite sprite)
+    {
+        SpriteRenderer spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        spriteRenderer.sprite = sprite;
+    }
+
+    public void SetAnimatorController(AnimatorController animatorController)
+    {
+        this._animator = gameObject.GetComponent<Animator>();
+        this._animator.runtimeAnimatorController = animatorController;
+    }
+
+    public void SetAnimationNames(string punchAnimationName, string deathAnimationName)
+    {
+        this._punchAnimationName = punchAnimationName;
+        this._deathAnimationName = deathAnimationName;   
+    }
+
+    public void SetThreshold(float punchThreshold, float deathThreshold)
+    {
+        this._punchThreshold = punchThreshold;
+        this._deathThreshold = deathThreshold;   
+    }
+    public void SetSpeed(float speed)
+    {
+        this._speed = speed;
     }
 
     public void OnPlayerHit(AttackDirection direction) {
-        if (Vector3.Distance(_transform.position, _target.position) < 2.5 && _canMove && direction == _directionRelativeToPlayer) {
-            StartCoroutine(AnimateAndMove("Wasabi_Get_Punch"));
+        if (Vector3.Distance(_transform.position, _target.position) < this._deathThreshold && _canMove && direction == _directionRelativeToPlayer) {
+            StartCoroutine(AnimateAndMove(this._deathAnimationName));
         }
-        
     }
 
     private IEnumerator AnimateAndMove(string animationName)
@@ -83,9 +118,10 @@ public class Enemy: MonoBehaviour
         if (this._behaviour == null || this._target == null)
             return;
 
-        if (Vector3.Distance(_transform.position, _target.position) < 1.8 && _canMove) {
+        Debug.Log("Punch Threshold: " + this._punchThreshold);
+        if (Vector3.Distance(_transform.position, _target.position) < this._punchThreshold && _canMove) {
             this._behaviour.Attack();
-            StartCoroutine(AnimateAndMove("Wasabi_Punch"));
+            StartCoroutine(AnimateAndMove(this._punchAnimationName));
             OnPositionChange();
         }
 

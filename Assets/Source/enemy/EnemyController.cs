@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
+using UnityEditor.Animations;
 using Random = System.Random;
 
 public class EnemyController: MonoBehaviour
@@ -12,8 +14,15 @@ public class EnemyController: MonoBehaviour
 
     private static string ENEMY_PREFAB_PATH = "prefabs/Enemy"; 
 
+    [SerializeField] private EnemyStorer _enemyStorer;
+
     void Start()
     {
+        if (this._enemyStorer == null)
+        {
+            Debug.LogError("Enemy storer not found");
+            return;
+        }
         this._enemies = new List<Enemy>();
         this.PopulateEnemies();
     }
@@ -22,7 +31,7 @@ public class EnemyController: MonoBehaviour
     {
         for (int i = 0; i < _enemyCount; i++)
         {
-            _enemies.Add(EnemyController.GenerateEnemyWithRandomBehaviour());
+            _enemies.Add(this.GenerateEnemyWithRandomBehaviour());
         }
     }
 
@@ -40,7 +49,7 @@ public class EnemyController: MonoBehaviour
         return randomPosition;
     } 
 
-    private static Enemy GenerateEnemyWithRandomBehaviour()
+    private Enemy GenerateEnemyWithRandomBehaviour()
     {
         Enemy enemyPrefab = Resources.Load<Enemy>(EnemyController.ENEMY_PREFAB_PATH);
 
@@ -50,7 +59,15 @@ public class EnemyController: MonoBehaviour
             return null;
         }
 
+        if (this._enemyStorer.enemyDefinitions == null || this._enemyStorer.enemyDefinitions.Count == 0)
+        {
+            Debug.LogError("Enemy definitions not found");
+            return null;
+        }
+
         Random random = new Random();
+
+        EnemyDefinition enemyDefinition = this._enemyStorer.enemyDefinitions[random.Next(0, this._enemyStorer.enemyDefinitions.Count)];
 
         Vector3 randomPosition = EnemyController.GetRandomSpawnPosition();
         Quaternion flippedQuaternion = Quaternion.Euler(0, 180, 0);
@@ -62,21 +79,24 @@ public class EnemyController: MonoBehaviour
             newEnemy = Instantiate(enemyPrefab, randomPosition, Quaternion.identity);
         }
 
-        int randomBehaviour = random.Next(0, 2);
-
-        switch (randomBehaviour)
+        switch (enemyDefinition.behaviour)
         {
             case 0:
-                newEnemy.SetBehaviour<MeleeEnemyBehaviour>();
+                newEnemy.SetBehaviour(new MeleeEnemyBehaviour());
                 break;
             case 1:
-                newEnemy.SetBehaviour<RangeEnemyBehaviour>();
+                newEnemy.SetBehaviour(new RangeEnemyBehaviour());
                 break;
             default:
-                Debug.LogError("Invalid behaviour index: " + randomBehaviour);
+                Debug.LogError("Invalid behaviour index: " + enemyDefinition.behaviour);
                 break;
         }
 
+        newEnemy.SetSprite(enemyDefinition.sprite);
+        newEnemy.SetAnimatorController(enemyDefinition.animationController);
+        newEnemy.SetAnimationNames(enemyDefinition.punchAnimationName, enemyDefinition.deathAnimationName);
+        newEnemy.SetSpeed(enemyDefinition.speed);
+        newEnemy.SetThreshold(enemyDefinition.punchThreshold, enemyDefinition.deathThreshold);
         return newEnemy;
     }
 }
