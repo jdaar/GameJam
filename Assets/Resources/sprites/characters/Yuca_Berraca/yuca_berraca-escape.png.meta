@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 99037b9e24ba6564692ba3fd7afef392
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 180
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: yuca_berraca-escape_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 2375
+        width: 704
+        height: 796
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2de2184fabede441951ff4b83da113a
+      internalID: -1332234724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuca_berraca-escape_1
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 2386
+        width: 677
+        height: 796
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3edb3149884fac4a927f945c92cbc16
+      internalID: -251259901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuca_berraca-escape_2
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 2386.5
+        width: 833.3333
+        height: 795.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d8d6650cfa6c17469f4bac02462ccae
+      internalID: 409593268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuca_berraca-escape_3
+      rect:
+        serializedVersion: 2
+        x: 2499
+        y: 2386.5
+        width: 833.3333
+        height: 795.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0502a37a08ee5444eaedcd8ee2656142
+      internalID: -504118584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuca_berraca-escape_4
+      rect:
+        serializedVersion: 2
+        x: 3332
+        y: 2386.5
+        width: 833.3333
+        height: 795.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ed29d6f123a5e44979e3c492bdb322
+      internalID: 1578203293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuca_berraca-escape_5
+      rect:
+        serializedVersion: 2
+        x: 4165
+        y: 2386.5
+        width: 833.3333
+        height: 795.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df54bed6370433841a8343d30565737c
+      internalID: -1892149385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuca_berraca-escape_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1591.5
+        width: 833.3333
+        height: 795.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 343297c21301c424d8674a931e1b84ff
+      internalID: -1610126762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuca_berraca-escape_7
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 1591.5
+        width: 833.3333
+        height: 795.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a0e314f0255c5b4faf32257588c1a96
+      internalID: -596314421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuca_berraca-escape_8
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 1591.5
+        width: 833.3333
+        height: 795.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe00c9ff38b3d9b4190ba053e167c867
+      internalID: -512270365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuca_berraca-escape_9
+      rect:
+        serializedVersion: 2
+        x: 2499
+        y: 1591.5
+        width: 833.3333
+        height: 795.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c590fdf2db6c3c42bb01cd5ebea4212
+      internalID: -568706997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuca_berraca-escape_10
+      rect:
+        serializedVersion: 2
+        x: 3332
+        y: 1591.5
+        width: 833.3333
+        height: 795.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af57bf318b4c6f4b8454596e5a7e2e9
+      internalID: 269811788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuca_berraca-escape_11
+      rect:
+        serializedVersion: 2
+        x: 4165
+        y: 1591.5
+        width: 833.3333
+        height: 795.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0dbc32147dc6fc46a7f7287ec027683
+      internalID: -925346745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuca_berraca-escape_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 796.5
+        width: 833.3333
+        height: 795.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 204354fb0feda0944b7084df88de3a25
+      internalID: -197984042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuca_berraca-escape_13
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 796.5
+        width: 833.3333
+        height: 795.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db81d51bbd90e7345be1a4e370e49aa6
+      internalID: 1173621796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuca_berraca-escape_14
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 796.5
+        width: 833.3333
+        height: 795.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85afd2103c7bc045b72e163bd0ca19b
+      internalID: -2020408604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuca_berraca-escape_15
+      rect:
+        serializedVersion: 2
+        x: 2499
+        y: 796.5
+        width: 833.3333
+        height: 795.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f003c4cb9500040b28b206f64adf1f
+      internalID: -676318627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuca_berraca-escape_16
+      rect:
+        serializedVersion: 2
+        x: 3332
+        y: 796.5
+        width: 833.3333
+        height: 795.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adae8af37891104419a198c990bb091f
+      internalID: 440325001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuca_berraca-escape_17
+      rect:
+        serializedVersion: 2
+        x: 4165
+        y: 796.5
+        width: 833.3333
+        height: 795.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d364b82768fd3c34ab8eef5f0c9d41b6
+      internalID: 1317122261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuca_berraca-escape_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.5
+        width: 833.3333
+        height: 795.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf63d9d998bdea4e9d96ecc457d78a6
+      internalID: 341850695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuca_berraca-escape_19
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 1.5
+        width: 833.3333
+        height: 795.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc96772a207532498f789ec354b17af
+      internalID: 261695765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuca_berraca-escape_20
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 1.5
+        width: 833.3333
+        height: 795.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2373c06dd336a834282b7ba8fa6ab4e4
+      internalID: 2147065754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuca_berraca-escape_21
+      rect:
+        serializedVersion: 2
+        x: 2499
+        y: 1.5
+        width: 833.3333
+        height: 795.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e97079ff8f24834689601ff462ddf86
+      internalID: 888940385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuca_berraca-escape_22
+      rect:
+        serializedVersion: 2
+        x: 3332
+        y: 1.5
+        width: 833.3333
+        height: 795.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ed66c322ed23543a98054bc467bd7d
+      internalID: 535172624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuca_berraca-escape_23
+      rect:
+        serializedVersion: 2
+        x: 4165
+        y: 1.5
+        width: 833.3333
+        height: 795.5
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b5d9abe69b8eb4bb7ab0c19d499b1a
+      internalID: -640172838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      yuca_berraca-escape_9: -568706997
+      yuca_berraca-escape_19: 261695765
+      yuca_berraca-escape_21: 888940385
+      yuca_berraca-escape_6: -1610126762
+      yuca_berraca-escape_17: 1317122261
+      yuca_berraca-escape_2: 409593268
+      yuca_berraca-escape_22: 535172624
+      yuca_berraca-escape_0: -1332234724
+      yuca_berraca-escape_14: -2020408604
+      yuca_berraca-escape_16: 440325001
+      yuca_berraca-escape_20: 2147065754
+      yuca_berraca-escape_10: 269811788
+      yuca_berraca-escape_7: -596314421
+      yuca_berraca-escape_8: -512270365
+      yuca_berraca-escape_12: -197984042
+      yuca_berraca-escape_5: -1892149385
+      yuca_berraca-escape_13: 1173621796
+      yuca_berraca-escape_3: -504118584
+      yuca_berraca-escape_18: 341850695
+      yuca_berraca-escape_23: -640172838
+      yuca_berraca-escape_4: 1578203293
+      yuca_berraca-escape_11: -925346745
+      yuca_berraca-escape_15: -676318627
+      yuca_berraca-escape_1: -251259901
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
