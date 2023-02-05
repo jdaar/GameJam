@@ -11,6 +11,7 @@ public class Enemy: MonoBehaviour
     private float _movementStartTime;
 
     private bool _canMove = true;
+    private AttackDirection _directionRelativeToPlayer;
 
     private Transform _transform;
     private Transform _target;
@@ -24,8 +25,8 @@ public class Enemy: MonoBehaviour
         this._behaviour = new T();
     }
 
-    public void OnPlayerHit() {
-        if (Vector3.Distance(_transform.position, _target.position) < 2.5 && _canMove) {
+    public void OnPlayerHit(AttackDirection direction) {
+        if (Vector3.Distance(_transform.position, _target.position) < 2.5 && _canMove && direction == _directionRelativeToPlayer) {
             StartCoroutine(AnimateAndMove("Wasabi_Get_Punch"));
         }
         
@@ -42,8 +43,10 @@ public class Enemy: MonoBehaviour
         if (_transform.position.x < 0)
         {
             _transform.rotation = flippedQuaternion;
+            _directionRelativeToPlayer = AttackDirection.LEFT;
         } else {
             _transform.rotation = Quaternion.identity;
+            _directionRelativeToPlayer = AttackDirection.RIGHT;
         }
 
         OnPositionChange();
@@ -57,6 +60,13 @@ public class Enemy: MonoBehaviour
         this._target = GameObject.FindObjectsOfType<Player>()[0].GetComponent<Transform>();
         this._movementStartTime = Time.time;
         this._journeyLength = Vector3.Distance(this._transform.position, this._target.position);
+
+        if (_transform.position.x < 0)
+        {
+            _directionRelativeToPlayer = AttackDirection.LEFT;
+        } else {
+            _directionRelativeToPlayer = AttackDirection.RIGHT;
+        }
 
         MainEvent.OnPlayerHit += this.OnPlayerHit;
     }

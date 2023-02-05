@@ -1,7 +1,7 @@
 public static class MainEvent
 {
     // Player events
-    public delegate void PlayerHit();
+    public delegate void PlayerHit(AttackDirection direction);
     public static PlayerHit OnPlayerHit;
     public delegate void PlayerDeath();
     public static PlayerDeath OnPlayerDeath;

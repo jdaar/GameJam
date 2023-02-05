@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
 
         AudioService.Instance.Play(Player.PUNCH_SOUND_PATH);
 
-        MainEvent.OnPlayerHit?.Invoke();
+        MainEvent.OnPlayerHit?.Invoke(direction);
     }
 
     private void OnPlayerTakeDamage() {
