@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
         _animator.Play("Ruth_Get_Punch");
         if (this._health <= 0)
         {
-            Debug.Log("Player is dead");
+            MainEvent.OnPlayerDeath?.Invoke();
             return;
         }
         this._health -= 1;
