@@ -16,12 +16,12 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private int _health = 3;
     private Transform _transform;
+    private Animator _animator;
 
     private static string PUNCH_SOUND_PATH = "5_Player_Punch";
 
     public void Attack(AttackDirection direction)
     {
-        Animator _animator = gameObject.GetComponent<Animator>();
         if (direction == AttackDirection.RIGHT) {
             _transform.rotation = Quaternion.identity;
         }
@@ -36,9 +36,8 @@ public class Player : MonoBehaviour
         MainEvent.OnPlayerHit?.Invoke();
     }
 
-    private void OnHit()
-    {
-        Debug.Log("Player RecieveDamage");
+    private void OnPlayerTakeDamage() {
+        _animator.Play("Ruth_Get_Punch");
         if (this._health <= 0)
         {
             Debug.Log("Player is dead");
@@ -50,8 +49,9 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _animator = gameObject.GetComponent<Animator>();
         _transform = gameObject.GetComponent<Transform>();
-        MainEvent.OnPlayerHit += this.OnHit;
+        MainEvent.OnPlayerTakeDamage += this.OnPlayerTakeDamage;
     }
 
     // Update is called once per frame

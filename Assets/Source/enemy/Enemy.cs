@@ -73,7 +73,7 @@ public class Enemy: MonoBehaviour
         if (this._behaviour == null || this._target == null)
             return;
 
-        if (Vector3.Distance(_transform.position, _target.position) < 1.6 && _canMove) {
+        if (Vector3.Distance(_transform.position, _target.position) < 1.8 && _canMove) {
             this._behaviour.Attack();
             StartCoroutine(AnimateAndMove("Wasabi_Punch"));
             OnPositionChange();

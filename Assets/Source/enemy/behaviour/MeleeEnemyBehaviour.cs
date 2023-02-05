@@ -6,6 +6,7 @@ public class MeleeEnemyBehaviour : BaseEnemyBehaviour
         return Vector3.Lerp(initialPosition, targetPosition, distanceCovered);
     }
     public override void Attack() {
+        MainEvent.OnPlayerTakeDamage?.Invoke();
     }
 
     public override void OnHit() {
